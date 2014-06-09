@@ -89,6 +89,7 @@ void Nrf24l::init()
     csnHi();
 
     // Initialize spi module
+    spi = new MirfSpiDriver();
     spi->begin();
 
 }
